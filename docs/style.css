@@ -5,10 +5,15 @@ body {
 
 a {
   color: #5865F2;
-  text-decorator: none;
+  text-decoration: none;
 }
 
 a:hover {
   color: #5865F2;
-  text-decorator: underline;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #5865F2;
+  text-decoration: underline;
 }
