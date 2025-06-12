@@ -1,0 +1,1 @@
+Discord threads are in many ways similar to a channel. It resides in a channel but functions as its own separate chat with special quirks and limitations.
