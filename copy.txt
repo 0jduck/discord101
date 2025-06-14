@@ -1,28 +1,68 @@
+html:
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Dropdown</title>
-    <style>
-        #content {
-            display: none; /* Start hidden */
-        }
-    </style>
+    <title>discord101 - threads</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="discord101 - threads">
+    <meta property="og:description" content="Threads subpage of discord101. A guid to anything discord. Contains information and explenation on discord and its many features. Made and developed by jduck.">
+    <meta property="og:url" content="https://0jduck.github.io/discord101">
+    <meta property="og:type" content="website">
 </head>
 <body>
-    <button onclick="toggleContent()">Toggle</button>
-    <div id="content">
-        <p>Here is some extra content!</p>
-        <button>Another Button</button>
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-    </div>
-
-    <script>
-        function toggleContent() {
-            const content = document.getElementById('content');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+    Home page - <a href='https://0jduck.github.io/discord101'>https://0jduck.github.io/discord101</a>
+  <div style='margin-top: 50px; margin-left: 20px;'>
+    <h1>Threads</h1><br>
+  </div>
+  <div style='margin-top: 0px; margin-left: 50px;'>
+    Discord threads are in many ways similar to a<br>
+    normal text channel. They resides in a channel<br>
+    but functions as thire own separate chat with<br>
+    special quirks and limitations.
+  </div>
+  <div style='margin-top: 50px; margin-left: 20px;'>
+    <button onclick="dropdown('uses')">Uses</button>
+  </div>
+  <div style='margin-top: 0px; margin-left: 50px;' class='dropdown' id='uses'>
+    Threads are used for many things. For example<br>
+    having a dedicated space/chat for a specific<br>
+    topic, only allowing some users to participate,<br>
+    not having to make a channel and more.
+  </div>
+  <script>
+  function toggleContent(id) {
+    const content = document.getElementById(id);
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  }
+  </script>
 </body>
-</html>
+
+
+css:
+body {
+  background-color: #333333;
+  color: #fff;
+}
+
+a {
+  color: #5865F2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5865F2;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #5865F2;
+  text-decoration: underline;
+}
+
+.dropdown {
+  display: none;
+}
